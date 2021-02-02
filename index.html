@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="queries.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+   
+    <link rel="shortcut icon" type="image/png" href="img/paw.png"/>
+	<script src="script.js"></script>
+	<title>Pet Adopt</title>
+</head>
+<body>
+
+<!--HEADER-->	
+
+<!--SECTION MENU + LOGO-->
+	<header>
+			
+		<nav>
+            <figure>
+				<a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+			</figure>
+			<div class="barre-menu">
+				<ul class="menu">
+					<li><a href="#compagnon"><div><img src="img/icons8-animaux-domestiques-100.png" alt="icone compagnon" class="img-a"></div><br>Votre Futur Compagnon</a></li>
+					<li><a href="valeurs.html"><div><img src="img/icons8-coeur-de-chien-256.png" alt="icone chien" class="img-b"></div><br>Nos Valeurs</a></li>
+					<li><a href="presentation.html"><div><img src="img/icons8-conférence-téléphonique-100.png" alt="icone personnes" class="img-c"></div><br>A propos de Nous</a></li>
+					<li><a href="#contact"><div><img src="img/icons8-envoyer-une-lettre-100.png" alt="icone contact" class="img-d"></div><br>Nous Contacter</a></li>						
+				</ul>
+			</div>
+		</nav>
+	
+<!--SECTION HERO-->
+		<div class="div-hero">
+			<img class="hero" src="img/hero.jpg" alt="photo chien et chat">
+			<p class="david">"Les Animaux sont nés <br>pour nous apprendre à aimer"<br><span> David Banville</span></p>
+			
+		</div>
+	</header>
+
+<!--MAIN-->
+	<main>
+	 <section>
+		 <div class="patte">
+			<h2>
+				<img class="patte-img" src="img/pattes2.png" alt="icone patte">
+					<span id="compagnon">Donnons leur une seconde chance ! </span>
+				<img src="img/pattes1.png" alt="icone patte">
+			</h2>	
+		</div>
+<!--FORMULAIRE-->
+    <div class="formulaire">
+    <h3 class="text_form">Trouvez l'animal qui vous attend :</h3>
+    <select name="pets" id="espece">
+        <option value="">Espèce</option>
+        <option value="dog">Chien</option>
+        <option value="cat">Chat</option>
+    </select>
+    <select name="pets" id="sexe">
+        <option value="">Sexe</option>
+        <option value="dog">Mâle</option>
+        <option value="cat">Femelle</option>
+        <option value="both">Sans préférence</option>
+    </select>
+    <select name="pets" id="age">
+        <option value="">Âge</option>
+        <option value="dog">Junior</option>
+        <option value="cat">Adulte</option>
+        <option value="cat">Senior</option>
+    </select>
+    <select name="pets" id="departement">
+        <option value="">Département</option>
+        <option value="dog">Ille-et-Vilaine</option>
+        <option value="cat">Côtes d'Armor</option>
+        <option value="cat">Morbihan</option>
+        <option value="cat">Finistère</option>
+    </select>
+    <input type="submit" value="Valider">
+   	</div> 
+	</section>
+<!--TEXT-->
+
+	<section>
+		<div class="pourquoi-adopter">
+			<h3>Pourquoi adopter en refuge ?</h3>
+			<p>Adopter en refuge c'est <span class="span1">s'engager</span> dans la protection des animaux; avec plus de 100 000 abandons par an et la non stérilisation de nombreux chats domestiques, les refuges et associations sont débordés.<br> En adoptant en association ou refuge <span class="span2">vous sauvez 2 vies</span> car la place libérée par votre nouveau compagnon permet d'accueillir un nouvel animal ! </p>
+		</div>
+	</section>
+    </main>
+    
+<!-- Footer-->
+<footer>
+    <section>
+    <div class="footer-nav">
+        <h2 id="contact">Nous Contacter :</h2>
+        <div class="from">
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" name="user_name" placeholder="Votre Nom :"><br>
+            <label for="mail"><span>Adresse E-mail :</span></label><br>
+            <input type="email" id="mail" name="user_email" placeholder="Votre adresse E-mail :"><br>
+            <label for="msg"><span>Message :</span></label><br>
+            <textarea id="msg" name="user_message" placeholder="Votre message :"></textarea><br>
+            <button type="submit">Poster le message</button>
+        </div>
+        <div class="row1">
+            <ul class="social-links">
+                <li><a href="#">Google Play App</a></li> 
+                <li><a href="#">IOS App</a></li>
+                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="row2_ind">
+            <ul class="Informations">
+                <li><i class="ion-location"></i>Avenue du Château Hébert<br> <span>35800 Dinard</span></li>
+                <li><i class="ion-ios-telephone"></i><a href="tel:+336991497 16">+33 6 99 14 97 16</a></li>
+                <li><i class="ion-ios-email"></i><a href="mailto:PetAdopt@gmail.com">PetAdopt@gmail.com</a></li>
+            </ul>
+         </div>
+        <div class="Copyright">
+            <p>
+                Copyright &copy; 2020 by Pet Adopt. All rights reserved.
+            </p>
+        </div>
+    </div>
+</section>
+</footer>
+</body>
+</html>
